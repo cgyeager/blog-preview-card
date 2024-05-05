@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+
+--yellow: hsl(47, 88%, 63%);
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 50%);
+--black: hsl(0, 0%, 7%);
+
+--font-size: 16px;
+
+--w1: 500;
+--w2: 800;
+
+}
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Figtree", sans-serif;
+}
+
+.blog-card {
+  background-color: var(--white);
+  border: solid 1px var(--black);
+  border-radius: 16px;
+  box-shadow: 8px 8px var(--black);
+  width: 40vh;
+  min-height: 50vh;
+  padding: 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.blog-card-content {
+  width:100%;
+}
+
+.blog-card-content > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.blog-card-content > div {
+  background-color: var(--yellow);
+  border-radius: 4px;
+  max-width: 75px;
+  min-height: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  font-weight: var(--w1);
+}
+
+.blog-card-content > h1 {
+  font-size: var(--font-size);
+  font-weight: var(--w2);
+}
+
+.blog-card-content > p {
+  font-size: var(--font-size);
+  line-height: 20px;
+}
+
+.avatar {
+  background-color: var(--white);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  font-size: var(--font-size);
+}
+
+.avatar > img {
+  width: 12%;
+  height: 12%;
+}
+
+.avatar > p {
+  padding-left: 8px;
+  font-size: var(--font-size);
+  font-weight: var(--w2);
+}
+
